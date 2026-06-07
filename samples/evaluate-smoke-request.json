@@ -1,0 +1,8 @@
+{
+  "projectId": "proj-smoke",
+  "videoPath": "file:///tmp/not-used-when-skipping.mp4",
+  "repoUrl": "https://github.com/pallets/flask",
+  "description": "A Flask API project that uses Redis for background jobs and GitHub Actions for CI.",
+  "skipTranscription": true,
+  "transcriptOverride": "This project is a Flask API. It uses Redis for background jobs and GitHub Actions for CI."
+}

@@ -1,0 +1,150 @@
+{
+  "projectId": "proj-123",
+  "repoUrl": "https://github.com/example/recipe-recommender",
+  "description": "A recipe recommender built with React, Node.js, PostgreSQL, Docker, and OpenAI.",
+  "transcription": {
+    "projectId": "proj-123",
+    "transcript": "We built the UI with React and the backend runs on Node.js. We use OpenAI for recommendations.",
+    "chunks": [
+      {
+        "id": "chunk-1",
+        "text": "We built the UI with React and the backend runs on Node.js.",
+        "startTime": 0,
+        "endTime": 18,
+        "embedding": []
+      },
+      {
+        "id": "chunk-2",
+        "text": "We use OpenAI for recommendations.",
+        "startTime": 18,
+        "endTime": 35,
+        "embedding": []
+      }
+    ],
+    "duration": 35
+  },
+  "repositoryAnalysis": {
+    "projectId": "proj-123",
+    "repoUrl": "https://github.com/example/recipe-recommender.git",
+    "detectedTechs": [
+      {
+        "key": "react",
+        "name": "React",
+        "category": "frontend",
+        "confidence": "high",
+        "evidence": [
+          {
+            "file": "package.json",
+            "line": 12,
+            "snippet": "\"react\": \"^18.2.0\"",
+            "source": "dependencies"
+          }
+        ]
+      },
+      {
+        "key": "nodejs",
+        "name": "Node.js",
+        "category": "backend",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "file": "package.json",
+            "line": 5,
+            "snippet": "\"start\": \"node server.js\"",
+            "source": "package-script"
+          }
+        ]
+      }
+    ],
+    "repository": {
+      "scannedFiles": 42,
+      "evidenceCount": 2,
+      "truncated": false,
+      "cloneSeconds": 1.2
+    }
+  },
+  "claimExtraction": {
+    "projectId": "proj-123",
+    "claimedTechs": [
+      {
+        "key": "react",
+        "name": "React",
+        "category": "frontend",
+        "matchedText": "React",
+        "sourceQuote": "A recipe recommender built with React, Node.js, PostgreSQL, Docker, and OpenAI.",
+        "confidence": "claimed"
+      },
+      {
+        "key": "nodejs",
+        "name": "Node.js",
+        "category": "backend",
+        "matchedText": "Node.js",
+        "sourceQuote": "A recipe recommender built with React, Node.js, PostgreSQL, Docker, and OpenAI.",
+        "confidence": "claimed"
+      },
+      {
+        "key": "postgresql",
+        "name": "PostgreSQL",
+        "category": "database",
+        "matchedText": "PostgreSQL",
+        "sourceQuote": "A recipe recommender built with React, Node.js, PostgreSQL, Docker, and OpenAI.",
+        "confidence": "claimed"
+      }
+    ],
+    "summary": {
+      "descriptionLength": 80,
+      "claimCount": 3
+    }
+  },
+  "verification": {
+    "projectId": "proj-123",
+    "claimVerification": [
+      {
+        "key": "react",
+        "claimed": "React",
+        "detected": true,
+        "transcriptMentioned": true,
+        "status": "verified",
+        "confidence": 0.9,
+        "evidence": [],
+        "notes": []
+      },
+      {
+        "key": "nodejs",
+        "claimed": "Node.js",
+        "detected": true,
+        "transcriptMentioned": true,
+        "status": "verified",
+        "confidence": 0.7,
+        "evidence": [],
+        "notes": []
+      },
+      {
+        "key": "postgresql",
+        "claimed": "PostgreSQL",
+        "detected": false,
+        "transcriptMentioned": false,
+        "status": "unverified",
+        "confidence": 0.1,
+        "evidence": [],
+        "notes": [
+          "No repository or transcript evidence matched this claim."
+        ]
+      }
+    ],
+    "summary": {
+      "totalClaims": 3,
+      "verified": 2,
+      "partial": 0,
+      "unverified": 1,
+      "contradicted": 0
+    }
+  },
+  "companyRelevance": {
+    "score": null,
+    "notes": "Not evaluated in Phase 2 MVP."
+  },
+  "evaluationNotes": [
+    "Sample report request composed from endpoint-shaped outputs."
+  ]
+}

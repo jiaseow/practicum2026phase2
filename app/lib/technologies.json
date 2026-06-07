@@ -1,0 +1,266 @@
+{
+  "react": {
+    "name": "React",
+    "category": "frontend",
+    "confidence_tier": "high",
+    "aliases": ["react", "reactjs", "react.js"]
+  },
+  "vue": {
+    "name": "Vue",
+    "category": "frontend",
+    "confidence_tier": "high",
+    "aliases": ["vue", "vuejs", "vue.js"]
+  },
+  "angular": {
+    "name": "Angular",
+    "category": "frontend",
+    "confidence_tier": "high",
+    "aliases": ["angular", "@angular/core"]
+  },
+  "svelte": {
+    "name": "Svelte",
+    "category": "frontend",
+    "confidence_tier": "high",
+    "aliases": ["svelte", "sveltekit", "@sveltejs/kit"]
+  },
+  "nextjs": {
+    "name": "Next.js",
+    "category": "frontend",
+    "confidence_tier": "high",
+    "aliases": ["next", "nextjs", "next.js"]
+  },
+  "gatsby": {
+    "name": "Gatsby",
+    "category": "frontend",
+    "confidence_tier": "high",
+    "aliases": ["gatsby", "gatsbyjs"]
+  },
+  "tailwindcss": {
+    "name": "Tailwind CSS",
+    "category": "frontend",
+    "confidence_tier": "high",
+    "aliases": ["tailwind", "tailwindcss", "tailwind css"]
+  },
+  "redux": {
+    "name": "Redux",
+    "category": "frontend",
+    "confidence_tier": "medium",
+    "aliases": ["redux", "@reduxjs/toolkit"]
+  },
+  "express": {
+    "name": "Express",
+    "category": "backend",
+    "confidence_tier": "high",
+    "aliases": ["express", "expressjs", "express.js"]
+  },
+  "flask": {
+    "name": "Flask",
+    "category": "backend",
+    "confidence_tier": "high",
+    "aliases": ["flask"]
+  },
+  "django": {
+    "name": "Django",
+    "category": "backend",
+    "confidence_tier": "high",
+    "aliases": ["django"]
+  },
+  "fastapi": {
+    "name": "FastAPI",
+    "category": "backend",
+    "confidence_tier": "high",
+    "aliases": ["fastapi"]
+  },
+  "spring": {
+    "name": "Spring",
+    "category": "backend",
+    "confidence_tier": "high",
+    "aliases": ["spring", "spring-boot", "org.springframework.boot"]
+  },
+  "nestjs": {
+    "name": "NestJS",
+    "category": "backend",
+    "confidence_tier": "high",
+    "aliases": ["nestjs", "@nestjs/core", "@nestjs/common"]
+  },
+  "nodejs": {
+    "name": "Node.js",
+    "category": "backend",
+    "confidence_tier": "medium",
+    "aliases": ["node", "nodejs", "node.js"]
+  },
+  "postgresql": {
+    "name": "PostgreSQL",
+    "category": "database",
+    "confidence_tier": "high",
+    "aliases": ["postgres", "postgresql", "pg", "psycopg", "psycopg2"]
+  },
+  "mongodb": {
+    "name": "MongoDB",
+    "category": "database",
+    "confidence_tier": "high",
+    "aliases": ["mongodb", "mongoose", "pymongo"]
+  },
+  "mysql": {
+    "name": "MySQL",
+    "category": "database",
+    "confidence_tier": "high",
+    "aliases": ["mysql", "mysql2", "pymysql"]
+  },
+  "redis": {
+    "name": "Redis",
+    "category": "database",
+    "confidence_tier": "high",
+    "aliases": ["redis", "ioredis"]
+  },
+  "sqlite": {
+    "name": "SQLite",
+    "category": "database",
+    "confidence_tier": "medium",
+    "aliases": ["sqlite", "sqlite3"]
+  },
+  "openai": {
+    "name": "OpenAI",
+    "category": "ai_ml",
+    "confidence_tier": "high",
+    "aliases": ["openai"]
+  },
+  "anthropic": {
+    "name": "Anthropic",
+    "category": "ai_ml",
+    "confidence_tier": "high",
+    "aliases": ["anthropic", "@anthropic-ai/sdk"]
+  },
+  "huggingface": {
+    "name": "Hugging Face",
+    "category": "ai_ml",
+    "confidence_tier": "high",
+    "aliases": ["huggingface", "hugging face", "transformers", "huggingface_hub"]
+  },
+  "tensorflow": {
+    "name": "TensorFlow",
+    "category": "ai_ml",
+    "confidence_tier": "high",
+    "aliases": ["tensorflow", "tfjs", "@tensorflow/tfjs"]
+  },
+  "pytorch": {
+    "name": "PyTorch",
+    "category": "ai_ml",
+    "confidence_tier": "high",
+    "aliases": ["torch", "pytorch"]
+  },
+  "scikit-learn": {
+    "name": "scikit-learn",
+    "category": "ai_ml",
+    "confidence_tier": "medium",
+    "aliases": ["scikit-learn", "sklearn"]
+  },
+  "docker": {
+    "name": "Docker",
+    "category": "devops",
+    "confidence_tier": "high",
+    "aliases": ["docker", "dockerfile"]
+  },
+  "docker-compose": {
+    "name": "Docker Compose",
+    "category": "devops",
+    "confidence_tier": "medium",
+    "aliases": ["docker-compose", "compose.yml", "docker compose"]
+  },
+  "kubernetes": {
+    "name": "Kubernetes",
+    "category": "devops",
+    "confidence_tier": "high",
+    "aliases": ["kubernetes", "k8s", "kubectl"]
+  },
+  "terraform": {
+    "name": "Terraform",
+    "category": "devops",
+    "confidence_tier": "high",
+    "aliases": ["terraform"]
+  },
+  "github-actions": {
+    "name": "GitHub Actions",
+    "category": "devops",
+    "confidence_tier": "medium",
+    "aliases": ["github actions", ".github/workflows"]
+  },
+  "aws": {
+    "name": "AWS",
+    "category": "cloud",
+    "confidence_tier": "high",
+    "aliases": ["aws", "boto3", "@aws-sdk/client-s3", "amazon web services"]
+  },
+  "gcp": {
+    "name": "Google Cloud",
+    "category": "cloud",
+    "confidence_tier": "high",
+    "aliases": ["gcp", "google cloud", "@google-cloud/storage"]
+  },
+  "azure": {
+    "name": "Azure",
+    "category": "cloud",
+    "confidence_tier": "high",
+    "aliases": ["azure", "@azure/storage-blob"]
+  },
+  "vercel": {
+    "name": "Vercel",
+    "category": "cloud",
+    "confidence_tier": "medium",
+    "aliases": ["vercel", "@vercel"]
+  },
+  "netlify": {
+    "name": "Netlify",
+    "category": "cloud",
+    "confidence_tier": "medium",
+    "aliases": ["netlify"]
+  },
+  "prisma": {
+    "name": "Prisma",
+    "category": "database",
+    "confidence_tier": "high",
+    "aliases": ["prisma", "@prisma/client"]
+  },
+  "sqlalchemy": {
+    "name": "SQLAlchemy",
+    "category": "database",
+    "confidence_tier": "medium",
+    "aliases": ["sqlalchemy"]
+  },
+  "graphql": {
+    "name": "GraphQL",
+    "category": "api",
+    "confidence_tier": "medium",
+    "aliases": ["graphql", "apollo-server", "@apollo/client"]
+  },
+  "trpc": {
+    "name": "tRPC",
+    "category": "api",
+    "confidence_tier": "medium",
+    "aliases": ["trpc", "@trpc/server", "@trpc/client"]
+  },
+  "stripe": {
+    "name": "Stripe",
+    "category": "payments",
+    "confidence_tier": "high",
+    "aliases": ["stripe"]
+  },
+  "supabase": {
+    "name": "Supabase",
+    "category": "backend",
+    "confidence_tier": "medium",
+    "aliases": ["supabase", "@supabase/supabase-js"]
+  },
+  "firebase": {
+    "name": "Firebase",
+    "category": "backend",
+    "confidence_tier": "medium",
+    "aliases": ["firebase", "firebase-admin"]
+  },
+  "langchain": {
+    "name": "LangChain",
+    "category": "ai_ml",
+    "confidence_tier": "medium",
+    "aliases": ["langchain", "@langchain/core"]
+  }
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phase 2 Agent Evaluation</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Phase 2</p>
+        <h1>Evidence-Grounded JSON Evaluation</h1>
+      </div>
+      <div class="topbar-actions">
+        <span class="status-pill" id="serverStatus">Checking</span>
+        <a class="link-button" href="/docs">API Docs</a>
+        <button class="ghost-button" id="refreshReportsButton" type="button">Refresh Reports</button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="step-section" aria-labelledby="step1-title">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Inputs</p>
+            <h2 id="step1-title">Upload Inputs and Run</h2>
+          </div>
+          <span class="status-pill idle" id="step1Status">Idle</span>
+        </div>
+
+        <div class="form-grid">
+          <label class="field">
+            <span>Project ID</span>
+            <input id="projectId" autocomplete="off" required />
+          </label>
+          <label class="field">
+            <span>GitHub Repo URL</span>
+            <input id="repoUrl" type="url" placeholder="https://github.com/org/repo" required />
+          </label>
+          <label class="field">
+            <span>MP4 Demo Video</span>
+            <input id="videoFile" type="file" accept=".mp4,video/mp4" />
+          </label>
+          <label class="field">
+            <span>Transcript TXT</span>
+            <input id="transcriptFile" type="file" accept=".txt,text/plain" />
+          </label>
+          <label class="field">
+            <span>Project README</span>
+            <input id="readmeFile" type="file" accept=".md,.markdown,.txt,text/markdown,text/plain" required />
+          </label>
+        </div>
+
+        <div class="button-row">
+          <button class="secondary-button" id="loadDefaultsButton" type="button">Load Defaults</button>
+          <button class="primary-button" id="step1Button" type="button">Upload Inputs</button>
+        </div>
+
+        <div class="split-output">
+          <div class="output-box" id="inputSummary">No inputs uploaded.</div>
+          <textarea id="descriptionPreview" rows="8" readonly></textarea>
+        </div>
+      </section>
+
+      <section class="step-section report-section" aria-labelledby="step4-title">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Output</p>
+            <h2 id="step4-title">Final JSON</h2>
+          </div>
+          <div class="button-row">
+            <span class="status-pill idle" id="step4Status">Idle</span>
+            <button class="ghost-button" id="downloadReportButton" type="button">Download JSON</button>
+          </div>
+        </div>
+
+        <div class="result-grid" id="metricsGrid">
+          <div class="metric-card"><span>Total Claims</span><strong>-</strong></div>
+          <div class="metric-card"><span>Verified</span><strong>-</strong></div>
+          <div class="metric-card"><span>Partially Verified</span><strong>-</strong></div>
+          <div class="metric-card"><span>Unverified</span><strong>-</strong></div>
+          <div class="metric-card"><span>Risk</span><strong>-</strong></div>
+        </div>
+        <pre class="json-viewer" id="jsonViewer">{}</pre>
+      </section>
+
+      <aside class="step-section reports-section" aria-labelledby="reports-title">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Saved</p>
+            <h2 id="reports-title">Reports</h2>
+          </div>
+        </div>
+        <div class="report-list" id="reportList"></div>
+      </aside>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

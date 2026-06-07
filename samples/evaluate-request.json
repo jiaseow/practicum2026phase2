@@ -1,0 +1,13 @@
+{
+  "projectId": "proj-123",
+  "videoPath": "file:///absolute/path/to/demo.mp4",
+  "repoUrl": "https://github.com/pallets/flask",
+  "description": "A Flask API project that uses Redis for background jobs and GitHub Actions for CI.",
+  "companyRelevance": {
+    "score": null,
+    "notes": "Not evaluated in Phase 2 MVP."
+  },
+  "evaluationNotes": [
+    "Full evaluation request shape for UI orchestration."
+  ]
+}

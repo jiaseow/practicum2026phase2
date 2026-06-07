@@ -1,0 +1,4 @@
+{
+  "projectId": "proj-123",
+  "description": "A web app that recommends recipes using OpenAI's GPT-4 based on ingredients the user uploads. Built with React frontend and Node.js backend. Uses PostgreSQL for storing user preferences and Docker for deployment. The API uses Express and the UI is styled with Tailwind CSS."
+}

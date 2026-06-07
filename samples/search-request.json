@@ -1,0 +1,6 @@
+{
+  "projectId": "proj-123",
+  "query": "React frontend",
+  "limit": 5,
+  "similarityThreshold": 0.7
+}

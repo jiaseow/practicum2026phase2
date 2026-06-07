@@ -1,0 +1,67 @@
+{
+  "projectId": "proj-123",
+  "claimedTechs": [
+    {
+      "key": "react",
+      "name": "React",
+      "category": "frontend",
+      "matchedText": "React",
+      "sourceQuote": "Built with React frontend and Node.js backend.",
+      "confidence": "claimed"
+    },
+    {
+      "key": "nodejs",
+      "name": "Node.js",
+      "category": "backend",
+      "matchedText": "Node.js",
+      "sourceQuote": "Built with React frontend and Node.js backend.",
+      "confidence": "claimed"
+    },
+    "PostgreSQL",
+    "AWS"
+  ],
+  "detectedTechs": [
+    {
+      "key": "react",
+      "name": "React",
+      "category": "frontend",
+      "confidence": "high",
+      "evidence": [
+        {
+          "file": "package.json",
+          "line": 12,
+          "snippet": "\"react\": \"^18.2.0\"",
+          "source": "dependencies"
+        }
+      ]
+    },
+    {
+      "key": "nodejs",
+      "name": "Node.js",
+      "category": "backend",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "file": "package.json",
+          "line": 5,
+          "snippet": "\"start\": \"node server.js\"",
+          "source": "package-script"
+        }
+      ]
+    }
+  ],
+  "transcriptChunks": [
+    {
+      "id": "chunk-1",
+      "text": "We built the UI with React and the backend runs on Node.js.",
+      "startTime": 0.0,
+      "endTime": 18.0
+    },
+    {
+      "id": "chunk-2",
+      "text": "We discuss future deployment, but not AWS in this prototype.",
+      "startTime": 18.0,
+      "endTime": 35.0
+    }
+  ]
+}
